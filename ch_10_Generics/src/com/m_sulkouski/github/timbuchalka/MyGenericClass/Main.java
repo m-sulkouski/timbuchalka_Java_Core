@@ -1,4 +1,4 @@
-package com.m_sulkouski.github.timbuchalka;
+package com.m_sulkouski.github.timbuchalka.MyGenericClass;
 
 public class Main {
     public static void main(String[] args) {
