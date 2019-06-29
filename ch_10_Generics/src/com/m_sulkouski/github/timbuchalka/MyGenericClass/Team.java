@@ -2,14 +2,14 @@ package com.m_sulkouski.github.timbuchalka.MyGenericClass;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team<T> {
     private String name;
     int played = 0;
     int won = 0;
     int lost = 0;
     int tied = 0;
 
-    private ArrayList<Player> players = new ArrayList<>();
+    private ArrayList<T> players = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;
@@ -23,9 +23,9 @@ public class Team {
         this.name = name;
     }
 
-    public boolean addPlayer(Player player) {
+    public boolean addPlayer(T player) {
         if (players.contains(player)) {
-            System.out.println("Player " + player.getName() + " is already in the team!");
+            System.out.println("Player " + ((Player)player).getName() + " is already in the team!");
             return false;
         }
         else {

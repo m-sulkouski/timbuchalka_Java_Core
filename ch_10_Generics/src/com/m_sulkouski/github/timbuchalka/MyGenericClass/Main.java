@@ -6,10 +6,11 @@ public class Main {
         HockeyPlayer ovi = new HockeyPlayer("Alexander Ovechkin");
         BaseballPlayer joe = new BaseballPlayer("John Doe");
 
-        Team allStars = new Team("All stars");
-        allStars.addPlayer(ronaldo);
-        allStars.addPlayer(ovi);
-        allStars.addPlayer(joe);
+        Team<FootballPlayer> juventus = new Team("Juventus F.C.");
+        juventus.addPlayer(ronaldo);
+        juventus.addPlayer(new FootballPlayer("Bonucci"));
+        juventus.addPlayer(new FootballPlayer("Douglas Costa"));
+        juventus
 
         System.out.println(allStars.countPlayers());
     }
